@@ -1,0 +1,17 @@
+<%- include('./include/header_user')%>
+
+<div class="login">
+    <div class="login-triangle"></div>
+    
+    <h2 class="login-header">Log in</h2>
+    <form class="login-container"action="/user_login" method="POST">
+      <p style="color: rgb(0, 136, 255); text-align: center;"><%=locals.message%></p>
+      <p><input type="email" name="email" placeholder="Email" ></p>
+      <p><input type="password" name="password" placeholder="Password" ></p>
+      <p><input type="submit" value="Log in"></p>  
+      <a href ="/signup">Signup</a>
+    </div>
+  </form>
+  
+
+<%- include('./include/footer_user')%>

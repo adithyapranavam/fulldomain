@@ -1,0 +1,14 @@
+<%- include('./include/admin_header')%>
+
+<div class="login">
+    <div class="login-triangle"></div>
+    <h2 class="login-header">Admin Log in</h2>
+    <form class="login-container"action="/admin_login" method="POST">
+      <p style="color: rgb(0, 136, 255);text-align: center;"><%=locals.message%></p>
+      <p><input type="email" name="email" placeholder="Email"></p>
+      <p><input type="password" name="password" placeholder="Password"></p>
+      <button style="background-color:rgb(0, 136, 255); padding:5px; margin-left: 140px;width: 100px;" type ="submit">Login</button>
+    </form>
+  </div>
+
+<%- include('./include/admin_footer')%>
